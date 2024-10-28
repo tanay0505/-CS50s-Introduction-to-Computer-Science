@@ -1,1 +1,1 @@
-# -CS50s-Introduction-to-Computer-Science
+# CS50s-Introduction-to-Computer-Science
