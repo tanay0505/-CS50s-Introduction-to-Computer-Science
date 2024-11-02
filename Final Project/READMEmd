@@ -1,0 +1,116 @@
+# PROJECT TITLE
+Mail
+
+#### Video Demo:  <https://youtu.be/q8061XqroXA>
+
+#### Description:
+
+Mail - CS50 Final Project
+Author: [Your Name]
+Course: CS50 - Introduction to Computer Science
+Project: Final Project
+
+Project Overview
+This project, Mail, is a simplified web-based email application, similar to Gmail. It is designed to provide
+a user-friendly experience with core email functionality, including user registration, login/logout, sending
+and receiving emails, and replying to emails. This README provides an in-depth description of the features,
+setup, and usage.
+
+
+Features
+1. User Registration and Login
+Register: Users can create an account with a unique username and password. If the username is already taken,
+they will be prompted to choose a different one.
+Password Security: Passwords are securely hashed and displayed as dots when inputted to enhance security and
+privacy.
+Login and Logout: After registering, users can log in and log out of the application securely.
+2. Email Functionalities
+Inbox: The main view where users can see a list of received emails. For each email, basic details like the
+sender and subject are displayed.
+Compose: Users can create a new email by entering the recipient, subject, and message content. This section
+provides a simple, intuitive form for email composition.
+Sent: The “Sent” folder displays all emails that the user has sent, providing an easy way to keep track of
+outgoing communication.
+Reply to Email: Users can reply to emails directly from the inbox, ensuring continuity in conversations and
+ease of access to previous threads.
+View Email Button: Each email in the inbox has a “View Email” button, which lets users see the full details
+of the selected email.
+
+Project Structure
+Frontend: HTML, CSS, and JavaScript are used to create the user interface and manage interactions.
+Backend: Flask (Python) is used for managing server-side logic, including handling requests and responses
+for registration, login, email composition, and retrieval.
+Database: SQLite is used as the database for managing user data and email content.
+Main Pages:
+Register - Allows users to sign up for an account.
+Login - Securely log in to the application.
+Inbox - Displays a list of received emails.
+Compose - Allows users to write and send a new email.
+Sent - Displays a list of emails that the user has sent.
+Setup Instructions
+Prerequisites
+Python 3.x installed on your system.
+Flask for managing the backend logic.
+SQLite for the database (included with Python by default).
+Jinja2 for templating in Flask.
+Installation
+Clone the Repository:
+
+bash
+Copy code
+git clone <repository_link>
+cd mail
+Install Dependencies: Make sure to install the necessary packages by running:
+
+bash
+Copy code
+pip install -r requirements.txt
+Set Up the Database: Initialize the database with the required tables for users and emails.
+
+bash
+Copy code
+flask db init
+flask db migrate -m "Initial migration"
+flask db upgrade
+Run the Application: Start the Flask server:
+
+bash
+Copy code
+flask run
+Access the Application: Go to http://127.0.0.1:5000 in your web browser to access the Mail application.
+
+Usage
+Register: Click on the "Register" button to create a new account. If the username is already taken,
+you’ll be prompted to choose a different one.
+
+Login: Use your credentials to log in. If the username or password is incorrect, an error message will
+ appear.
+
+Inbox: Upon logging in, you’ll be directed to the inbox where you can view received emails. For each email,
+ a "View Email" button allows you to see its full details.
+
+Compose: Navigate to the “Compose” section to create a new email. Enter the recipient's username, subject,
+ and message body, and click "Send" to deliver the email.
+
+Sent: In the “Sent” section, you can see all emails you’ve sent. Each email includes details like the
+recipient and subject.
+
+Reply to Email: In the inbox, select an email to reply to by clicking the "Reply" button. This will open
+a new compose form pre-filled with the recipient and original message, allowing you to continue the conversation seamlessly.
+
+Security Measures
+Password Hashing: Passwords are securely hashed to protect user data.
+Secure Form Handling: Data submitted in forms, such as usernames and passwords, is handled securely
+to prevent unauthorized access.
+Future Improvements
+Some potential enhancements for this project include:
+
+Adding support for email attachments.
+Implementing a search feature to find emails by subject or sender.
+Adding categories or folders for better email organization.
+Acknowledgements
+This project was inspired by the CS50 Web Programming with Python and JavaScript course, which provided
+foundational knowledge in web development and backend technologies.
+
+License
+This project is licensed under the MIT License. Please see the LICENSE file for more information.
